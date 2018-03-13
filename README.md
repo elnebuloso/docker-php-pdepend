@@ -1,6 +1,6 @@
 # docker-php-pdepend
 
-Dockerized PHP Depend - Software Metrics for PHP
+Dockerized PHP Depend - Software Metrics for PHP (https://pdepend.org/)
 
 ## docker hub
 
