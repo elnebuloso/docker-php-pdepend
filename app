@@ -13,7 +13,14 @@ case "$1" in
 
     test)
         echo ""
-        docker run --rm -w $(pwd)/test -v $(pwd)/test:$(pwd)/test pdepend ${@:2}
+        mkdir -p test/report
+        git clone https://github.com/symfony/asset.git test/symfony-asset > /dev/null 2>&1
+
+        docker run --rm -w $(pwd) -v $(pwd):$(pwd) docker-php-pdepend pdepend \
+            --jdepend-chart=$(pwd)/test/report/chart.svg \
+            --overview-pyramid=$(pwd)/test/report/pyramid.svg \
+            --dependency-xml=$(pwd)/test/report/dependency.xml \
+            --summary-xml=$(pwd)/test/report/summary.xml $(pwd)/test/symfony-asset/
     ;;
 
     *)
