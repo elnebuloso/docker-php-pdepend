@@ -20,7 +20,8 @@ case "$1" in
             --jdepend-chart=$(pwd)/test/report/chart.svg \
             --overview-pyramid=$(pwd)/test/report/pyramid.svg \
             --dependency-xml=$(pwd)/test/report/dependency.xml \
-            --summary-xml=$(pwd)/test/report/summary.xml $(pwd)/test/symfony-asset/
+            --summary-xml=$(pwd)/test/report/summary.xml \
+            $(pwd)/test/symfony-asset/
     ;;
 
     *)
