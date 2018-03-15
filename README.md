@@ -13,5 +13,5 @@ See Supported Tags at https://hub.docker.com/r/elnebuloso/php-pdepend/tags/
 ## run
 
 ```
-docker run --rm -w $(pwd) -v $(pwd):$(pwd) docker-php-pdepend pdepend
+docker run --rm -w $(pwd) -v $(pwd):$(pwd) elnebuloso/php-pdepend pdepend
 ```
