@@ -2,16 +2,13 @@
 
 Dockerized PHP Depend - Software Metrics for PHP (https://pdepend.org/)
 
-## docker hub
+## docker
 
 See Supported Tags at https://hub.docker.com/r/elnebuloso/php-pdepend/tags/
-
-#### Supported tags and respective `Dockerfile` links
-
-- [Dockerfile](https://github.com/elnebuloso/docker-php-pdepend/blob/master/Dockerfile)
 
 ## run
 
 ```
-docker run --rm -w $(pwd) -v $(pwd):$(pwd) elnebuloso/php-pdepend pdepend
+docker run --rm -w $(pwd) -v $(pwd):$(pwd) elnebuloso/php-pdepend --version
+docker run --rm -w $(pwd) -v $(pwd):$(pwd) elnebuloso/php-pdepend
 ```
