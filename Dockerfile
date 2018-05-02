@@ -1,8 +1,7 @@
 FROM elnebuloso/composer:7.2
 MAINTAINER jeff.tunessen@gmail.com
 
-ENV PATH="/srv/composer/vendor/bin:${PATH}"
-RUN composer global require pdepend/pdepend
+RUN composer global require pdepend/pdepend \
+    && ln -s /srv/composer/vendor/bin/pdepend /usr/local/bin/pdepend
 
-CMD ["-"]
-ENTRYPOINT ["pdepend"]
+CMD ["sh"]
