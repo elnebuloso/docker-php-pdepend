@@ -8,7 +8,7 @@ pipeline {
                     image = docker.build("elnebuloso/php-pdepend", "--pull --rm --no-cache -f Dockerfile .")
 
                     image.inside("--entrypoint=''") {
-                        pdepend_version = sh(script: "pdepend --version | grep -Po '((\\d+\\.)+\\d+)'", returnStdout: true).trim()
+                        pdepend_version = sh(script: "pdepend --version | grep -Eo '((\\d+\\.)+\\d+)'", returnStdout: true).trim()
                     }
 
                     semver = semver(pdepend_version)

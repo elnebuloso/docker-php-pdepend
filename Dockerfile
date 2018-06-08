@@ -1,8 +1,11 @@
-FROM elnebuloso/composer:7.2
+FROM composer
 MAINTAINER jeff.tunessen@gmail.com
 
-RUN composer global require pdepend/pdepend \
-    && ln -s /srv/composer/vendor/bin/pdepend /usr/local/bin/pdepend
+ENV COMPOSER_ALLOW_SUPERUSER 1
+ENV COMPOSER_HOME /srv
+
+RUN composer global require pdepend/pdepend --no-suggest --no-ansi --no-interaction \
+    && ln -s /srv/vendor/bin/pdepend /usr/local/bin/pdepend
 
 ENTRYPOINT ["pdepend"]
 CMD ["-"]
