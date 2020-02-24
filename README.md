@@ -1,10 +1,21 @@
+<img src="https://raw.githubusercontent.com/elnebuloso/docker-php-pdepend/master/logo.png" width="100%"/>
+
 # docker-php-pdepend
+
+![Release](https://github.com/elnebuloso/docker-php-pdepend/workflows/Release/badge.svg)
+[![Docker Pulls](https://img.shields.io/docker/pulls/elnebuloso/php-pdepend.svg)](https://hub.docker.com/r/elnebuloso/php-pdepend)
+[![GitHub](https://img.shields.io/github/license/elnebuloso/docker-php-pdepend.svg)](https://github.com/elnebuloso/docker-php-pdepend)
 
 Dockerized PHP Depend - Software Metrics for PHP (https://pdepend.org/)
 
+## github
+
+- https://github.com/elnebuloso/docker-php-pdepend
+
 ## docker
 
-See Supported Tags at https://hub.docker.com/r/elnebuloso/php-pdepend/tags/
+- https://hub.docker.com/r/elnebuloso/php-pdepend
+- https://hub.docker.com/r/elnebuloso/php-pdepend/tags
 
 ## run
 
