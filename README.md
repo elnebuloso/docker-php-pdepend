@@ -15,7 +15,8 @@ Dockerized PHP Depend - Software Metrics for PHP (https://pdepend.org/)
 ## docker
 
 - https://hub.docker.com/r/elnebuloso/php-pdepend
-- https://hub.docker.com/r/elnebuloso/php-pdepend/tags
+- https://hub.docker.com/r/elnebuloso/php-pdepend/tags?page=1&ordering=last_updated
+- weekly builds, 0 0 * * 0
 
 ## run
 
